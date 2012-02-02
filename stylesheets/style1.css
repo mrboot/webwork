@@ -2,7 +2,33 @@
 CSS for Bubble Under site
 */
 
-p {
-	font-weight: bold;
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	background-color: #e2edff;
+	line-height: 125%;
+	padding: 15px;
+}
+
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+
+li {
+	font-size: small;
+}
+
+h2 {
 	color: blue;
+	font-size: medium;
+	font-weight: normal;
+}
+
+p {
+	font-size: small;
+	color: navy;
+}
+
+em {
+	text-transform: uppercase;
 }

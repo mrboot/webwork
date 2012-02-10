@@ -6,8 +6,11 @@ body {
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 	background-color: #e2edff;
 	line-height: 125%;
-	padding: 15px;
+	padding: 0;
+	margin: 0;
+/*	padding: 15px;
 	border: 4px solid navy;
+*/
 }
 
 h1, h2, h3 {
@@ -21,6 +24,7 @@ h1 {
 	padding-top: 2em;
 	padding-bottom: .2em;
 	padding-left: .4em;
+	margin: 0;
 }
 
 h2 {
@@ -36,6 +40,7 @@ h2, ul {
 
 li {
 	font-size: small;
+	list-style-type: none;
 }
 
 p {
@@ -79,6 +84,7 @@ a:active {
 	padding-top: .2em;
 	padding-bottom: .2em;
 	padding-left: .8em;
+	margin: 0;
 }
 
 .fun {
@@ -89,6 +95,37 @@ a:active {
 
 #navigation {
 	width: 180px;
-	border: 1px dotted navy;
 	background-color: #7da5d8;
 }
+
+#header {
+	border-top: 3px solid #7da5d8;
+}
+
+/*	Start of positioning section 
+ *	Using absolute positioning
+ *	fixed x & y co-ords from top left
+ */
+
+#navigation, #bodycontent, #header {
+	position: absolute;
+}
+
+#navigation, #bodycontent {
+	top: 105px;
+}
+
+#bodycontent {
+	left: 200px;
+}
+
+#header, #tagline {
+	width: 100%;
+}
+
+.feature {
+	float: right;
+	margin: 10px;
+}
+
+/* End of positioning section */

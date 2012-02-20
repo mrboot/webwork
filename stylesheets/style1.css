@@ -102,6 +102,30 @@ a:active {
 	border-top: 3px solid #7da5d8;
 }
 
+.galleryphoto {
+	padding-bottom: 20px;
+	border-bottom: 1px solid navy;
+	margin-bottom; 10px;
+	margin-top: 20px;
+}
+
+.galleryphoto img {
+	border: 15px solid white;
+}
+
+.galleryphoto p {
+	font-size: 65%;
+	font-weight: bold;
+	margin-top: 0;
+	width: 430px;
+	line-height: 1.4em;
+}
+
+.photocredit {
+	font-weight: normal;
+	color: gray;
+}
+
 /*	Start of positioning section 
  *	Using absolute positioning
  *	fixed x & y co-ords from top left

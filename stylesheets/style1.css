@@ -25,6 +25,7 @@ h1 {
 	padding-bottom: .2em;
 	padding-left: .4em;
 	margin: 0;
+	background: navy url(../images/backgrounds/header-bg.jpg) repeat-y right;
 }
 
 h2 {
@@ -85,6 +86,7 @@ a:active {
 	padding-bottom: .2em;
 	padding-left: .8em;
 	margin: 0;
+	background: #bed8f3 url(../images/backgrounds/tagline-fade.jpg) repeat-y right;
 }
 
 .fun {
@@ -95,7 +97,8 @@ a:active {
 
 #navigation {
 	width: 180px;
-	background-color: #7da5d8;
+	height: 484px;
+	background: #7da5d8 url(../images/backgrounds/nav-bg.jpg) no-repeat;
 }
 
 #header {

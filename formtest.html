@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test of Form CSS</title>
+<meta charset="utf-8"/>
+<link href="stylesheets/formtest.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="depot_form">
+  <FORM action="http://somesite.com/prog/adduser" method="post">
+
+  <fieldset>
+    <legend>Enter User Details</legend>
+      
+    <div>
+      <LABEL for="firstname">First name: </LABEL>
+      <INPUT type="text" id="firstname">
+    </div>
+
+    <div>
+      <LABEL for="lastname">Last name: </LABEL>
+      <INPUT type="text" id="lastname">
+    </div>
+
+    <div class="aligned">
+      <LABEL for="currentpassword">Current Password: </LABEL>
+      <INPUT type="password" id="currentpassword">
+    </div>
+
+    <div>
+      <LABEL for="password">Password: </LABEL>
+      <INPUT type="password" id="password">
+    </div>
+
+    <div>
+      <LABEL for="confirmpassword">Confirm Password: </LABEL>
+      <INPUT type="password" id="confirmpassword">
+    </div>
+
+    <p>
+      <INPUT type="radio" name="sex" value="Male"> Male<BR>
+      <INPUT type="radio" name="sex" value="Female"> Female<BR>
+      <INPUT type="submit" value="Send"> <INPUT type="reset">
+    </P>
+
+  </fieldset>
+  </FORM>
+</div>
+
+<DIV class="container">
+  <P>This small paragraph...
+</DIV>
+
+</body> 

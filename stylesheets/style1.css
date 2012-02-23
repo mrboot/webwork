@@ -129,6 +129,39 @@ a:active {
 	color: gray;
 }
 
+table.events {
+  border-collapse: collapse;
+}
+
+table.events th, table.events td {
+  padding: 4px;
+  border: 1px solid #000066;
+}
+
+table.events th {
+  font-size: x-small;
+  text-align: left;
+  background: #241374 url(../images/backgrounds/header-bg.jpg);
+  color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+table.events td {
+  font-size: small;
+  background: #e2edff url(../images/backgrounds/td.jpg) repeat-x top;
+}
+
+table.events caption {
+	color: #000066;
+	font-size: small;
+	text-align: left;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
 /*	Start of positioning section 
  *	Using absolute positioning
  *	fixed x & y co-ords from top left

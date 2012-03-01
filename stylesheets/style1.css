@@ -162,6 +162,54 @@ table.events caption {
 	font-weight: bold;
 }
 
+form.contact {
+	padding: 0px;
+	/*margin: 0px;*/
+	margin-top: -15px;
+	margin-right: 20px;
+	line-height: 150%;
+}
+
+form.contact fieldset {
+	border: 2px solid navy;
+	padding: 10px;
+}
+
+form.contact legend {
+	font-weight: bold;
+	font-size: small;
+	color: navy;
+	padding: 5px;
+}
+
+form.contact label {
+	font-weight: bold;
+	font-size: small;
+	color: blue;
+}
+
+form.contact label.fixedwidth {
+	display: block;
+	width: 240px;
+	float: left;
+	padding-right: 20px;
+	text-align: right;
+}
+
+form.contact .buttonarea input {
+	background: navy;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+form.contact .buttonarea {
+	text-align: center;
+	padding: 4px;
+	background-color: #0066ff;
+}
+
 /*	Start of positioning section 
  *	Using absolute positioning
  *	fixed x & y co-ords from top left

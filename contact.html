@@ -26,8 +26,83 @@
 		<div id="bodycontent">
 			<h2>Contact Us</h2>
 			
-			<p>To find out more, contact Club Secretary Bob Dobalina on 01793
-				641207 or email <a href="mailto:bob@bubbleunder.com">bob@bubbleunder.com.</a></p>
+			<p>To let us know about a firthcoming dive event, please use the form below.</p>
+
+			<form action="" method="post" class="contact">
+				<fieldset>
+					<legend>Tell us about a dive event</legend>
+					<div>
+						<label for="contactname" class="fixedwidth">Contact Name</label>
+						<input type="text" name="contactname" id="contactname"/>
+					</div>
+					<div>
+						<label for="telephone" class="fixedwidth">Telephone Number</label>
+						<input type="text" name="telephone" id="telephone"/>
+					</div>
+					<div>
+						<label for="email" class="fixedwidth">Email Address</label>
+						<input type="text" name="email" id="email"/>
+					</div>
+					<div>
+						<label for="eventname" class="fixedwidth">What's the event called?</label>
+						<input type="text" name="eventname" id="eventname"/>
+					</div>
+					<div>
+						<label for="eventdate" class="fixedwidth">When's the event happening?</label>
+						<input type="text" name="eventdate" id="eventdate"/>
+					</div>
+					<div>
+						<label for="region" class="fixedwidth">What region is the event in?</label>
+						<select name="region" id="region">
+							<option>South West</option>
+							<option>South East</option>
+							<option>Midlands</option>
+							<option>Central</option>
+							<option>London</option>
+							<option>East</option>
+							<option>North</option>
+							<option>Scotland</option>
+							<option>Northern Ireland</option>
+							<option>Wales</option>
+							<option>International (see detaile below)</option>
+						</select>
+					</div>
+					<div>
+						<p>Please provide more details if needed.</p>
+						<label for="details" class="fixedwidth">More details (as much as you think you will need!)</label>
+						<textarea id="details" name="details" cols="30" rows="7"></textarea>
+					</div>
+					<div>   
+		              <p>If we need to call you back for any more info, what would be the
+		                  best time to call you on the number supplied?</p>   
+		              <input type="radio" name="timetocall" id="morning" value="Morning"/>
+		              <label for="morning">In the morning</label>
+		              <br/>
+		              <input type="radio" name="timetocall" id="afternoon" value="Afternoon"/>
+		              <label for="afternoon">In the afternoon</label>   
+		              <br/>
+		              <input type="radio" name="timetocall" id="evening" value="Evening"/>
+		              <label for="evening">In the evening</label>   
+		              <br/>
+		              <input type="radio" name="timetocall" id="never" value="Never" checked="checked"/>
+		              <label for="never">No calls please</label>
+            		</div>
+           			<div>   
+		              <p>Bubble Under may share information you give us here with other
+		                  like-minded people or web sites to promote the event. Please confirm if you
+		                  are happy for us to do this.</p>   
+		              <input type="checkbox" name="publicize" id="publicize" checked="checked"/>
+		              <label for="publicize">I am happy for this event to be publicized outside of and 
+		              beyond BubbleUnder.com, where possible</label>
+            		</div>
+            		<div class="buttonarea">
+            			<input type="submit" value="Send us the info"/>
+            		</div>
+				</fieldset>
+			</form>
+
+			<p>if you need to get in touch urgently, please contact contact Club Secretary Bob Dobalina on 01793
+				641207. For anything else, please <a href="mailto:bob@bubbleunder.com">drop us a line by email</a>.</p>
 		</div>
 	</body>
 </html>

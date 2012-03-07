@@ -26,11 +26,53 @@
 		<div id="bodycontent">
 			<h2>Welcome to our super-dooper Scuba site</h2>
 			
-			<p><img class="feature" src="images/divers-circle.jpg" width="200" height="162"
-				alt="A circle of divers practice their skills"/></p>
+			<div class ="aside">
+				<p><img src="images/divers-circle.jpg" width="200" height="162"
+					alt="A circle of divers practice their skills"/></p>
 
-			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FBubble-Under%2F156732361048951%3Fsk%3Dwall&amp;width=292&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=true&amp;height=427" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:427px;" allowTransparency="true"></iframe>
-
+				<iframe 				src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FBubble-Under%2F222255634539316&amp;width=200&amp;height=350&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:350px;" allowTransparency="true"></iframe>
+				
+				<div id="twitImageLink">
+					<a href="https://twitter.com/mrboot" class="twitter-follow-button" data-show-count="false"
+					 data-size="large">Follow @mrboot</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id)){js=d.createElement(s);
+							js.id=id;
+							js.src="http://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+				</div> <!-- end of twitImageLink div -->
+	
+				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 4,
+				  interval: 30000,
+				  width: 200,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#061e52',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#000084',
+				      color: '#ffffff',
+				      links: '#b8e6e1'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: false,
+				    live: false,
+				    behavior: 'all'
+				  }
+				}).render().setUser('mrboot').start();
+				</script>
+			</div> <!-- end of aside div -->
+			
 			<p>Glad you could drop in and share some air with us! You've
 				passed your underwater navigation skills and successfully
 				found your way to the start point - or in this case, our

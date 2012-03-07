@@ -210,6 +210,12 @@ form.contact .buttonarea {
 	background-color: #0066ff;
 }
 
+#twitImageLink {
+	border: none;
+	display: block;
+	margin: 15px 0;
+}
+
 /*	Start of positioning section 
  *	Using absolute positioning
  *	fixed x & y co-ords from top left
@@ -234,6 +240,12 @@ form.contact .buttonarea {
 .feature {
 	float: right;
 	margin: 10px;
+}
+
+.aside {
+	float: right;
+	margin: 10px;
+	width: 200px;
 }
 
 /* End of positioning section */

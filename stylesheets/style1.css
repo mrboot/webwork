@@ -216,6 +216,11 @@ form.contact .buttonarea {
 	margin: 15px 0;
 }
 
+#homeImage {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
 /*	Start of positioning section 
  *	Using absolute positioning
  *	fixed x & y co-ords from top left

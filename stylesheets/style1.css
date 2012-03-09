@@ -95,14 +95,21 @@ a:active {
 	letter-spacing: 0.05em;
 }
 
-#navigation {
+nav {
 	width: 180px;
 	height: 484px;
 	background: #7da5d8 url(../images/backgrounds/nav-bg.jpg) no-repeat;
+	display: block; /* only for IE8 or less */
 }
 
-#header {
+header {
 	border-top: 3px solid #7da5d8;
+	display: block; /* only for IE8 or less */
+}
+
+nav ul {
+	margin: 0;
+	padding-top: 15px;
 }
 
 .galleryphoto {
@@ -226,11 +233,11 @@ form.contact .buttonarea {
  *	fixed x & y co-ords from top left
  */
 
-#navigation, #bodycontent, #header {
+nav, #bodycontent, #header {
 	position: absolute;
 }
 
-#navigation, #bodycontent {
+nav, #bodycontent {
 	top: 105px;
 }
 
@@ -238,7 +245,7 @@ form.contact .buttonarea {
 	left: 200px;
 }
 
-#header, #tagline {
+header, #tagline {
 	width: 100%;
 }
 

@@ -200,6 +200,7 @@ form.contact {
 form.contact fieldset {
 	border: 2px solid navy;
 	padding: 10px;
+	border-radius: 10px;
 }
 
 form.contact legend {
@@ -222,6 +223,10 @@ form.contact label.fixedwidth {
 	padding-right: 20px;
 	text-align: right;
 }
+
+/*form.contact input {
+	width: 18em;
+}*/
 
 form.contact .buttonarea input {
 	background: navy;

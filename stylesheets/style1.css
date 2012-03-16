@@ -224,9 +224,9 @@ form.contact label.fixedwidth {
 	text-align: right;
 }
 
-/*form.contact input {
-	width: 18em;
-}*/
+form.contact input[type=text] {
+	width: 15em;
+}
 
 form.contact .buttonarea input {
 	background: navy;

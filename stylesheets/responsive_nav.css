@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0;
+ 
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+nav {
+	width: 90%;
+	margin: 50px auto;	
+}
+ 
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+nav li a {
+	display: block;
+	float: left;
+	width: 12.5%;
+	padding: 10px;
+ 
+	background: #444;
+	border-right: 1px solid #fff;
+ 
+	color: #fff;	
+	font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	/*TRANSISTIONS*/
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+ 
+/*SMALL*/
+nav small {
+	color: #aaa;	
+	font: 100 11px/1 Helvetica, Verdana, Arial, sans-serif;
+	text-transform: none;
+ 
+}
+
+/*HOVER*/
+nav li a:hover {
+	background: #222;
+}
+
+nav li:last-child a {
+	border: none;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 1220px), only screen and (max-device-width : 1220px){
+	nav li a {
+		font: 400 10px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+ 
+	nav small {
+		font: 100 10px/1 Helvetica, Verdana, Arial, sans-serif;
+	}
+}
+
+@media only screen and (max-width : 930px), only screen and (max-device-width : 930px){
+	nav li a {
+		width: 25%;
+		border-bottom: 1px solid #fff;
+		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+ 
+	nav li:last-child a, nav li:nth-child(4) a {
+		border-right: none;
+	}
+ 
+	nav li:nth-child(5) a, nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
+		border-bottom: none;
+	}
+}
+
+@media only screen and (max-width : 580px), only screen and (max-device-width : 580px){
+	nav li a {
+		width: 50%;
+		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+ 
+	nav li:nth-child(even) a {
+		border-right: none;
+	}
+ 
+	nav li:nth-child(5) a, nav li:nth-child(6) a {
+		border-bottom: 1px solid #fff;
+	}
+}
+ 
+@media only screen and (max-width : 320px), only screen and (max-device-width : 320px){
+	nav li a {
+		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+}

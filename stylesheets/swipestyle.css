@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e2edff;
+  line-height: 125%;
+  /*padding: 0;*/
+  /*margin: 0;*/
+}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: x-large;
+  background-color: black;
+  color: gold;
+  padding-top: 2em;
+  padding-bottom: .2em;
+  padding-left: .4em;
+  margin: 0;;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 4px;
+  border: 2px solid #000066;
+}
+
+table th {
+  font-size: small;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table td {
+  font-size: small;
+}

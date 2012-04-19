@@ -1,23 +1,26 @@
 <html>
 <head>
 	<title>Swipe Data in a table</title>
+	<link href="stylesheets/swipestyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+	<h1>Demo of swipe data in a form</h1>
 	<form>
-<!-- could also use conventional input and set display:none in CSS -->
-		<input type="hidden" name="swipedata" id="hiddenInput">
+		<!-- could also use conventional input and set display:none in CSS -->
+		<input type="text" name="swipedata" id="hiddenInput" value="" />
+		<!-- <input type="hidden" name="swipedata" id="hiddenInput"> -->
 	</form>
 	<table>
 		<tr>
-			<th>surName</th>
-			<th>foreNames</th>
-			<th>gender</th>
-			<th>dateOfBirth</th>
-			<th>expiryDate</th>
-			<th>docType</th>
-			<th>docNumber</th>
-			<th>issuingState</th>
-			<th>nationality</th>
+			<th>Surname</th>
+			<th>Forenames</th>
+			<th>Gender</th>
+			<th>Date Of Birth</th>
+			<th>Expiry Date</th>
+			<th>Document Type</th>
+			<th>Document Number</th>
+			<th>issuing State</th>
+			<th>Nationality</th>
 		</tr>
 	</table>
 	<script type="text/javascript" charset="utf-8" src="scripts/jquery-1.7.1.min.js"></script>

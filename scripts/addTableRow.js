@@ -10,38 +10,38 @@ $(document).ready(function (){
     function(event) {
       if (event.which == 91) {
         $("input#hiddenInput").focus();
-        };
+      };
     }
   );
 
 	// receive text from swipe into this text field...
 
 	// on completion of sending data receive special keypress
-	// In testing this is set to "TAB" (ASCII code 9)
+	// In testing this is set to "]" (ASCII code 9)
   $("body").keypress(
     function(event) {
-      if (event.which == 9) {
+      if (event.which == 93) {
 				// read contents of field and split data either side of ":" char
 				// store in array variable
-				var fieldData = $("input#hiddenInput").val().split(":");
+				var fieldData = $("input#hiddenInput").val().replace(/(\[|\])/g, '').split(":");
 
 				// update global variable to replace placeholder text with correct value
 				rowString = rowString.replace(fieldData[0], fieldData[1]);
 
-				// clear the hidden field
-				$("input#hiddenInput").val('');
-        };
+        // clear the hidden field
+        $("input#hiddenInput").val('');
+      };
     }
   );
 
 	// On receipt of END_SWIPE_DATA use global variable to add row to table.
 	// This is indicated by sending special character listened for by this function
-	// In testing this is set to "]" (ASCII code 93)
+	// In testing this is set to "=" (ASCII code 93)
   $("body").keypress(
     function(event) {
-      if (event.which == 93) {
+      if (event.which == 61) {
         $('tr:last').after(rowString);
-        };
+      };
     }
   );
 

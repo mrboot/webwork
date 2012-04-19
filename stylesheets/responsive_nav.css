@@ -39,6 +39,10 @@ nav li a {
 	    -ms-transition: background 0.5s ease;
 	        transition: background 0.5s ease;
 }
+
+.container #fsw_93dcnsgg {
+	margin: 10px auto;
+}
  
 /*SMALL*/
 nav small {

@@ -20,6 +20,10 @@ h1 {
   margin: 0;;
 }
 
+input#hiddenInput {
+  width: 80em;
+}
+
 table {
   border-collapse: collapse;
 }

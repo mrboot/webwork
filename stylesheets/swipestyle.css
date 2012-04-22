@@ -20,7 +20,13 @@ h1 {
   margin: 0;;
 }
 
-input#hiddenInput {
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input#swipecodeline {
+  margin-top: 5px;
   width: 80em;
 }
 
@@ -30,12 +36,13 @@ table {
 
 table th, table td {
   padding: 4px;
-  border: 2px solid #000066;
+  border: 2px solid black;
 }
 
 table th {
   font-size: small;
   text-align: center;
+  background-color: gray;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 5px;

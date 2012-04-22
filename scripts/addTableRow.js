@@ -9,10 +9,10 @@ $(document).ready(function (){
   $("body").keypress(
     function(event) {
       if (event.which == 91) {
-        $("input#hiddenInput").focus();
+        $("input#swipecodeline").focus();
 
         // clear the hidden field
-        $("input#hiddenInput").val('');
+        $("input#swipecodeline").val('');
       };
     }
   );
@@ -26,24 +26,20 @@ $(document).ready(function (){
     function(event) {
       if (event.which == 93) {
         // read contents of field and split into array based on "," char and
-        // removing the leading and trailing [] characters.
-        // store in array variable
-        var fieldData = $("input#hiddenInput").val().replace(/(\[|\])/g, '').split(",");
-
-        // Get rid of the last element in the array as its a blank entry
-        fieldData.pop();
+        // removing the leading and trailing [] characters. store in array variable
+        var fieldData = $("input#swipecodeline").val().replace(/(\[|\])/g, '').split(",");
 
         // Iterate through the array splitting out each element into key value pairs.
         // update global variable to replace placeholder text with correct value
         // using the key value pairs
-        // rowString = rowString.replace(fieldData[0], fieldData[1]);
+        var rowInsert = rowString
         for (var i = 0; i < fieldData.length; i++) {
-          rowString = rowString.replace(fieldData[i].split(":")[0], 
+          rowInsert = rowInsert.replace(fieldData[i].split(":")[0], 
                                         fieldData[i].split(":")[1]);
         };
 
         // add a row after the current last row of the table.
-        $('tr:last').after(rowString);
+        $('tr:last').after(rowInsert);
       };
     }
   );
@@ -51,6 +47,7 @@ $(document).ready(function (){
 });
 
 // Test String for the text field
-// [surName:Booth,foreNames:Mark,gender:Male,dateOfBirth:18-12-1972,expiryDate:20-01-2014,docType:Passport,docNumber:123456789,issuingState:GBR,nationality:GBR,]
+// [surName:Booth,foreNames:Mark,gender:Male,dateOfBirth:18-12-1972,expiryDate:20-01-2014,docType:Passport,docNumber:123456789,issuingState:GBR,nationality:GBR]
+// [surName:Dolton,foreNames:Joanne Ruth,gender:Female,dateOfBirth:10-04-1974,expiryDate:03-12-2015,docType:Passport,docNumber:987654321,issuingState:FRA,nationality:FRA]
 
 

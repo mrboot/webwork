@@ -1,0 +1,49 @@
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color: black;
+	font-family: 'Fugaz One', cursive;
+	font-size: 130%;
+	font-weight: normal;
+	padding-top: 15px;
+	line-height: 1;
+}
+
+table th {
+	border-bottom: 1px solid #999;
+	text-align: left;
+	padding-top: 5px;
+	font-size: 130%;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: blue;
+}
+
+table tr td {
+	line-height: 150%;
+}
+
+table tr.day th {
+	background-color: white;
+}
+
+table tr:nth-child(even) {
+	background-color: #bca2d6;
+}
+
+table tr td.time {
+	width: 8em;
+	/*border: 1px solid red;*/
+}
+
+table tr td.channel {
+	width: 18em;
+	/*border: 1px solid red;*/
+}
+
+table tr td.title {
+	width: 20em;
+	/*border: 1px solid red;*/
+}
